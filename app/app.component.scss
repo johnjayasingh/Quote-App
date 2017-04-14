@@ -1,0 +1,32 @@
+address{
+    text-align: right;
+    text-decoration: underline;
+}
+cite{
+    text-decoration: underline;
+}
+.quote{
+    background: #ada;
+    padding: 10px;    
+}
+.loading{
+    display: flex;
+    margin: 0 auto;
+}
+.container{
+    width: 50%;
+    margin: 0 auto;
+}
+@media screen and(max-width:800px){
+    .container{
+        width: 90%;
+    }
+}
+.next-quote-btn{
+    text-align: right;
+    flex: 1;
+    display: block;
+    margin-left: 70%;
+    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    color: white;   
+}

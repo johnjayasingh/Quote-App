@@ -1,0 +1,13 @@
+<div class="container "style="text-align:center;"  *ngIf="loading">
+  <span class="fa fa-spinner fa-spin fa-3x"></span>
+</div>
+<div *ngIf="!loading" class="container">
+  <div *ngFor="let quoteData of quote" class="quote">
+    <cite>Quote of the Click</cite>
+    <blockquote [innerHTML]="quoteData.content"></blockquote>
+    <address>-&nbsp;{{ quoteData.title }}</address>
+  </div>
+  <div class="actions">
+    <a type="button" (click)="quoteUpdate()" class="next-quote-btn">Another Quote</a>
+  </div>
+</div>
